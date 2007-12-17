@@ -6,7 +6,6 @@ License:	BSD
 Group:		File tools
 Url:		http://www.mktemp.org/
 Source:		ftp://ftp.mktemp.org/pub/mktemp/mktemp-%{version}.tar.bz2
-Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 The mktemp utility takes a given file name template and overwrites
