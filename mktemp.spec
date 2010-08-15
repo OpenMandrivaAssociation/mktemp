@@ -1,7 +1,7 @@
 Summary:	A small utility for safely making /tmp files
 Name:		mktemp
-Version:	1.6
-Release:	%mkrel 4
+Version:	1.7
+Release:	%mkrel 1
 License:	BSD
 Group:		File tools
 Url:		http://www.mktemp.org/
