@@ -1,12 +1,11 @@
 Summary:	A small utility for safely making /tmp files
 Name:		mktemp
 Version:	1.7
-Release:	%mkrel 2
+Release:	3
 License:	BSD
 Group:		File tools
 Url:		http://www.mktemp.org/
-Source:		ftp://ftp.mktemp.org/pub/mktemp/mktemp-%{version}.tar.gz
-Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
+Source0:	ftp://ftp.mktemp.org/pub/mktemp/mktemp-%{version}.tar.gz
 
 %description
 The mktemp utility takes a given file name template and overwrites
@@ -24,14 +23,10 @@ programs which will create and use unique /tmp files.
 %make
 
 %install
-rm -rf %{buildroot}
 
 perl -pi -e "s!/usr/man!%{_mandir}!g" Makefile
 
 %makeinstall bindir=%{buildroot}/bin
-
-%clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %files
 %defattr(644,root,root,755)
