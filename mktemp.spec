@@ -4,7 +4,7 @@ Version:	1.7
 Release:	3
 License:	BSD
 Group:		File tools
-Url:		http://www.mktemp.org/
+Url:		https://www.mktemp.org/
 Source0:	ftp://ftp.mktemp.org/pub/mktemp/mktemp-%{version}.tar.gz
 
 %description
