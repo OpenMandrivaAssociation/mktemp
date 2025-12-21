@@ -7,6 +7,11 @@ Group:		File tools
 Url:		https://www.mktemp.org/
 Source0:	ftp://ftp.mktemp.org/pub/mktemp/mktemp-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 The mktemp utility takes a given file name template and overwrites
 a portion of it to create a unique file name.  This allows shell
